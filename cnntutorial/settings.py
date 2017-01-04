@@ -25,7 +25,9 @@ SECRET_KEY = 'y26=*y3_+q!b=2l(ncbjg0&#picx_(-vl03yxl%3pgl6v9qgo@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',
+]
 
 
 # Application definition
@@ -37,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'cnn.apps.CnnConfig',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# define upload MEDIA_ROOT
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'

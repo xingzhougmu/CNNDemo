@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Digit Recognition</title>
+	</head>
+
+	<body>
+
+		<h1>Handwritten Digits Recognition:</h2>
+		<h2>
+			This demo is showing how to recognize handwritten digits via Convolutional Nueral Network(CNN) model.
+		</h2>
+		<h3>
+			The whole framework consists of:
+		</h3>
+		<ol>
+			<li><b>Host Server:</b> Ubuntu VM hosted on <a href="https://azure.microsoft.com">Microsoft Azure</a></li>
+			<li><b>Web Server Framework:</b> <a href="https://www.djangoproject.com/">Django 1.10</a></li>
+			<li><b>Neural Network framework:</b> <a href="https://lasagne.readthedocs.io">Lasagne and Theano</a></li>
+			<li><b>Working Dataset:</b> <a href="http://yann.lecun.com/exdb/mnist/">MNIST Dataset</a></li>
+			<li><b>Programming Language:</b> <a href="https://www.python.org/">Python</a></li>
+		</ol>
+
+		<h3>
+			How the recognition works?
+		</h3>
+		<ol>
+			<li>Train the model offline</li>
+				<ul>
+					<li>This model contains two convoluton and two pooling layers, a fully-connected hidden layer and a fully-connected output layer.</li>
+					<li>The convolution layer contains 32 filters of size 5x5.</li>
+					<li>Max-pooling layer takes factor 2.</li>
+				</ul>
+			<br>
+			<li>Load pre-trained mode online to recognize the digit within the uploaded image</li>
+		</ol>
+		
+		<h3>Test Area:</h3>
+		
+		<!-- List of uploaded images -->
+		
+			<p> No images. </p>
+		
+
+		<!-- Upload form. No enctype attribute! -->
+		<form action="/cnn/digit_recog/" method="post" enctype="multipart/form-data">
+			<input type='hidden' name='csrfmiddlewaretoken' value='SnrmCmp44cr8DvXo34GKmdwyqSp9o7Dlv5iRHANecTqmsNacxhcBecvlVt4x28EH' />
+			<p></p>
+		
+			<p><label for="id_imgFile">Select a file:</label> max. 42 megabytes</p>
+
+			<p>
+				
+				<input id="id_imgFile" name="imgFile" type="file" required />
+			</p>
+
+			<p><input type="submit" value="Upload"></p>
+		</form>
+
+		<h3>Discussion:</h3>
+			<p>The trained model is quite sensitive to the training data set.</p>
+			<ul><li> The training dataset's background is black. If the test sample is with white background, the test result is bad.</li>
+			<li>The prediction rate also depends on the thickness of the handwritten digits.</li>
+			</ul>
+			<p>This is another example where the learned model cannot be easily applied to other scenarios. In other words, it is difficult to come up with a generic model.</p>
+		<h3>Reference:</h3>
+		<ol>
+			<li><a href="http://cs231n.github.io">CS231n Convolutional Neural Networks for Visual Recognition</a></li>
+			<li><a href="https://lasagne.readthedocs.io/en/latest/user/tutorial.html#run-the-mnist-example">Lasagne MNIST Example</a></li>
+			<li><a href="http://django-rest-framework.org/tutorial/quickstart/">Django REST Framework</a></li>	
+		</ol>
+		<br><br>
+		
+		<img src="/static/Azure.png" alt="Microsoft Azure" style="width:150px;height:150px;"/>
+		<img src="/static/django.png" alt="Django" style="width:150px;height:150px;"/>
+		<img src="/static/lasagne.jpg" alt="Lasagne" style="width:350px;height:150px;"/>
+		<img src="/static/theano.png" alt="Theano" style="width:250px;height:150px;"/>
+		<img src="/static/python.jpeg" alt="Python" style="width:150px;height:150px;"/>
+	</body>
+
+</html>
