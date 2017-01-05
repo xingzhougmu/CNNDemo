@@ -13,6 +13,7 @@ This demo is showing how to recognize handwritten digits via Convolutional Nuera
   - The convolution layer contains 32 filters of size 5x5.
   - Max-pooling layer takes factor 2.
 1. Load pre-trained mode online to recognize the digit within the uploaded image
+1. On how to run this demo please check the [instructions](Install.md).
 
 ## Discussion:
 The trained model is quite sensitive to the training data set.
