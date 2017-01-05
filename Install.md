@@ -10,7 +10,7 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   2. virtualenv cnn-django  
   Life is tough. You cannot simply achieve all at a time.
   ```
-  Error encountered:
+    Error encountered:
 		ReadTimeoutError: HTTPSConnectionPool(host='pypi.python.org', port=443): Read timed out.
 		OSError: Command /home/xingzhou/cnn-django/bin/python2 - setuptools pkg_resources pip wheel failed with error code 2
   ```
@@ -18,7 +18,7 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   3. source cnn-django/bin/activate
 5. Install Django
 6. install Lasagne
-	Prerequisite:
+    Prerequisite:
 		a. pip install numpy
 		b. pip install scipy
 	pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
@@ -27,8 +27,8 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
 8. create django app: python manage.py startapp cnn
 9. Migrate APP files from test server to production
 10. Sync DB
-		a. python manage.py makemigrations cnn
-		b. python manage.py migrate
+  1. python manage.py makemigrations cnn
+  2. python manage.py migrate
 11. When running "python manage.py runserver", received a warning:
 
   ```
