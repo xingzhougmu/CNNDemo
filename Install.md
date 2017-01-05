@@ -34,7 +34,7 @@ The instructions shown below are illustrating how to run the demo in an Azure Li
   ```python
   python manage.py startapp cnn
   ```
-9. Migrate APP files from test server to production
+9. Migrate APP files from test server to production. You can simply clone from this repository.
 10. Sync DB
   1. python manage.py makemigrations cnn
   2. python manage.py migrate
