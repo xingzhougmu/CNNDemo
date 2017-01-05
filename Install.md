@@ -1,5 +1,5 @@
 # Installation Instructions:
-The instructions shown below is illustrating how to run the demo in an Azure Linux Virtual Machine.
+The instructions shown below are illustrating how to run the demo in an Azure Linux Virtual Machine.
 
 1. Create an Azure Linux VM. You need an Azure subscription to achieve this. Not have one? You can start with a [free one][3].
 2. Remote to Azure VM - Putty
@@ -17,19 +17,19 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   You can check [this link][1] for more on this issue. I simpliy switch from Azure China to Azure Global to avoid network issue. 
   3. source cnn-django/bin/activate
 5. Install Django
-6. install Lasagne
+6. Install Lasagne
   Prerequisite:
   1. pip install numpy
   2. pip install scipy
   ```python
   pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
   ```
-7. create django project
+7. Create django project
 
   ```python
   django-admin.py startproject cnntutorial
   ```
-8. create django app
+8. Create django app
 
   ```python
   python manage.py startapp cnn
@@ -43,6 +43,7 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   ```
   g++ not detected theano will be unable to execute optimized c-implementations
   ```
+  
   sudo apt-get install g++
   However, encounter another compilation error.	
   Need to install: [python-dev][6]
