@@ -19,6 +19,7 @@ This demo is showing how to recognize handwritten digits via Convolutional Nuera
 The trained model is quite sensitive to the training data set.
 - The training dataset's background is black. If the test sample is with white background, the test result is bad.
 - The prediction rate also depends on the stroke width of the handwritten digits. However, LeNet is robust to stoke width without requiring unreliable preprocessing such as line thinning. If intereted, please take a look at [LeNet](http://yann.lecun.com/exdb/lenet/stroke-width.html).
+- The training image size is 28x28. So if the test image is not square the predict result is hurt. I guess this is caused by the imresize function coming from scipy.misc.
 
 This is another example where the learned model cannot be easily applied to other scenarios. In other words, it is difficult to come up with a generic model.
 
