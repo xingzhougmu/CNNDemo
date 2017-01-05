@@ -18,11 +18,12 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   3. source cnn-django/bin/activate
 5. Install Django
 6. install Lasagne
-    Prerequisite:
-		a. pip install numpy
-		b. pip install scipy
-	pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
-	
+  Prerequisite:
+  1. pip install numpy
+  2. pip install scipy
+  ```python
+  pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
+  ```
 7. create django project: django-admin.py startproject cnntutorial
 8. create django app: python manage.py startapp cnn
 9. Migrate APP files from test server to production
