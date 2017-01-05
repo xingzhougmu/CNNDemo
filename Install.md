@@ -25,10 +25,12 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
   ```
 7. create django project
+
   ```python
   django-admin.py startproject cnntutorial
   ```
 8. create django app
+
   ```python
   python manage.py startapp cnn
   ```
@@ -37,6 +39,7 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   1. python manage.py makemigrations cnn
   2. python manage.py migrate
 11. When running "python manage.py runserver", received a warning:
+
   ```
   g++ not detected theano will be unable to execute optimized c-implementations
   ```
@@ -45,6 +48,7 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
   Need to install: [python-dev][6]
 12. Then all set. However, I cannot access the web app via internet. Because the webapp is running on 127.0.0.1, which will not accept internet request.
   For details check [this page][5]. I run the following code to start the web server.
+  
   ```python
   python manager.py runserver 0.0.0.0:8000
   ```  
