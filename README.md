@@ -25,8 +25,10 @@ This is another example where the learned model cannot be easily applied to othe
 1. [Lasagne MNIST Example](https://lasagne.readthedocs.io/en/latest/user/tutorial.html#run-the-mnist-example)
 1. [Django REST Framework](http://django-rest-framework.org/tutorial/quickstart/)
 
-<img src="cnn/static/Azure.png" alt="Microsoft Azure" style="width:150px;height:150px;"/>
-<img src="cnn/static/django.png" alt="Django" style="width:150px;height:150px;"/>
-<img src="cnn/static/lasagne.jpg" alt="Lasagne" style="width:350px;height:150px;"/>
-<img src="cnn/static/theano.png"  alt="Theano" style="width:250px;height:150px;"/>
-<img src="cnn/static/python.jpeg"  alt="Python" style="width:150px;height:150px;"/>
+<p align="center">
+<img src="cnn/static/Azure.png" alt="Microsoft Azure" style="height:150px;"/>
+<img src="cnn/static/django.png" alt="Django" style="height:150px;"/>
+<img src="cnn/static/lasagne.jpg" alt="Lasagne" style="height:150px;"/>
+<img src="cnn/static/theano.png"  alt="Theano" style="height:150px;"/>
+<img src="cnn/static/python.jpeg"  alt="Python" style="height:150px;"/>
+</p>
