@@ -26,9 +26,9 @@ This is another example where the learned model cannot be easily applied to othe
 1. [Django REST Framework](http://django-rest-framework.org/tutorial/quickstart/)
 
 <p align="center">
-<img src="cnn/static/Azure.png" alt="Microsoft Azure" style="height:150px;"/>
-<img src="cnn/static/django.png" alt="Django" style="height:150px;"/>
-<img src="cnn/static/lasagne.jpg" alt="Lasagne" style="height:150px;"/>
-<img src="cnn/static/theano.png"  alt="Theano" style="height:150px;"/>
-<img src="cnn/static/python.jpeg"  alt="Python" style="height:150px;"/>
+<img src="cnn/static/lasagne.jpg" alt="Lasagne" height="100"/>
+<img src="cnn/static/theano.png"  alt="Theano" height="100"/>
+<img src="cnn/static/Azure.png" alt="Microsoft Azure" height="100"/>
+<img src="cnn/static/django.png" alt="Django" height="100"/>
+<img src="cnn/static/python.jpeg"  alt="Python" height="100"/>
 </p>
