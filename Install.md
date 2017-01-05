@@ -33,14 +33,14 @@ The instructions shown below is illustrating how to run the demo in an Azure Lin
 
   ```
   g++ not detected theano will be unable to execute optimized c-implementations
-	```
+  ```
   sudo apt-get install g++
   However, encounter another compilation error.	
   Need to install: [python-dev][6]
 12. Then all set. However, I cannot access the web app via internet. Because the webapp is running on 127.0.0.1, which will not accept internet request.
   For details check [this page][5]. I run the following code to start the web server.
  
- ```python
+  ```python
   python manager.py runserver 0.0.0.0:8000
   ```  
 13. Still have **allowed_host** issue
