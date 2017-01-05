@@ -28,6 +28,8 @@ This is another example where the learned model cannot be easily applied to othe
 <p align="center">
 <img src="cnn/static/lasagne.jpg" alt="Lasagne" height="100"/>
 <img src="cnn/static/theano.png"  alt="Theano" height="100"/>
+</p>
+<p align="center">
 <img src="cnn/static/Azure.png" alt="Microsoft Azure" height="100"/>
 <img src="cnn/static/django.png" alt="Django" height="100"/>
 <img src="cnn/static/python.jpeg"  alt="Python" height="100"/>
